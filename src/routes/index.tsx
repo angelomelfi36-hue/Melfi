@@ -32,8 +32,10 @@ function Navbar() {
         scrolled ? 'bg-amber-950 shadow-lg' : 'bg-transparent'
       }`}
     >
-       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div className="hidden md:flex items-center gap-1 relative">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div />
+
+        <div className="hidden md:flex items-center gap-1 relative">
           <button
             onClick={() => setOpen(!open)}
             className="flex items-center gap-2 bg-amber-700 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
