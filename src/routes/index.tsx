@@ -139,12 +139,7 @@ function HeroSection() {
       }} />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Bakery logo / emblem placeholder */}
-        {/*
-          INSERT IMAGE HERE — Logo del forno
-          Descrizione: Logo o stemma del Forno Bianchi, preferibilmente su sfondo trasparente.
-          Dimensioni consigliate: 200×200 px, formato PNG con trasparenza.
-        */}
+      <img src="/logo-forno.png"  alt="Logo Forno Melfi" className="mx-auto mb-6 w-32 h-32 object-contain" />
         <div className="mb-6 flex justify-center">
           <div className="w-20 h-20 rounded-full border-4 border-amber-300 flex items-center justify-center bg-amber-900/60">
             {/* INSERT IMAGE HERE - Logo forno, 200×200 px PNG trasparente */}
@@ -157,7 +152,7 @@ function HeroSection() {
         </p>
         <h1 className="font-playfair text-5xl md:text-7xl text-white font-bold leading-tight mb-6">
           Forno Artigianale<br />
-          <span className="text-amber-300">Bianchi</span>
+          <span className="text-amber-300">Melfi</span>
         </h1>
         <p className="text-amber-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 font-lato font-light">
           Pane fragrante, dolci genuini e pasticceria tradizionale italiana.
