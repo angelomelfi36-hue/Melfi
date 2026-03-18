@@ -6,7 +6,7 @@ export const Route = createFileRoute('/')({
 })
 
 /* ─────────────────────────────────────────────
-   Navigation
+   Navigation (Senza scritta bianca)
 ───────────────────────────────────────────── */
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -52,7 +52,7 @@ function Navbar() {
 }
 
 /* ─────────────────────────────────────────────
-   Hero Section
+   Hero Section (Logo nel cerchio, sfondo ripristinato)
 ───────────────────────────────────────────── */
 function HeroSection() {
   return (
@@ -70,6 +70,10 @@ function HeroSection() {
           Forno Artigianale<br />
           <span className="text-amber-300">Melfi</span>
         </h1>
+        <p className="text-amber-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-lato font-light">
+          Pane fragrante, dolci genuini e pasticceria tradizionale italiana.<br />
+          Ogni giorno inforniamo con passione, rispettando le ricette di famiglia tramandate di generazione in generazione.
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#prodotti" className="bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-4 rounded-full text-lg">Scopri i Prodotti</a>
           <a href="#contatti" className="border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-amber-950 font-bold px-8 py-4 rounded-full text-lg">Vieni a Trovarci</a>
@@ -80,17 +84,20 @@ function HeroSection() {
 }
 
 /* ─────────────────────────────────────────────
-   Main Component
+   Products Section (RIPRISTINATA)
 ───────────────────────────────────────────── */
-function BakeryHome() {
+const products = [
+  { id: 1, name: 'Pane di Casa', badge: 'Classico', image: '/prod-pane.webp', description: 'Crosta croccante, mollica soffice e profumo irresistibile di lievito madre.' },
+  { id: 2, name: 'Focaccia Genovese', badge: 'Più Amato', image: '/prod-focaccia.webp', description: 'Soffice e dorata, condita con olio extravergine d\'oliva e sale grosso.' },
+  { id: 3, name: 'Cornetti Artigianali', badge: 'Colazione', image: '/prod-cornetto.webp', description: 'Pasta sfoglia lavorata a mano, burro selezionato, farcitura di crema o cioccolato.' },
+]
+
+function ProductsSection() {
   return (
-    <main className="bg-stone-50">
-      <Navbar />
-      <HeroSection />
-      {/* Qui puoi aggiungere le altre sezioni (ProductsSection, etc.) se servono */}
-      <section className="py-20 text-center text-stone-500">
-        <p>Scorri per scoprire di più</p>
-      </section>
-    </main>
-  )
-}
+    <section id="prodotti" className="py-24 bg-stone-50 text-center">
+      <h2 className="font-playfair text-4xl text-amber-950 font-bold mb-12">I Nostri Prodotti</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6">
+        {products.map(p => (
+          <div key={p.id} className="bg-white rounded-3xl overflow-hidden shadow-md">
+            <img src={p.image} className="h-52 w-full object-cover" />
+            <div className="p-6">
