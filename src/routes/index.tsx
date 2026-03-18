@@ -291,9 +291,6 @@ function HistorySection() {
       title: 'Nuovi Sapori',
       text: 'Apertura del secondo punto vendita. La famiglia Bianchi inizia a partecipare alle fiere gastronomiche regionali, ottenendo numerosi riconoscimenti per la qualità dei prodotti.',
     },
-    {
-      year: 'Oggi',
-      title: 'Tradizione Viva',
-      text: "La terza generazione custodisce con orgoglio le ricette di famiglia e le arricchisce con tecniche moderne, mantenendo l'anima artigianale che da sempre ci distingue
-      ]
+]
 }
+
