@@ -1,0 +1,25 @@
+@import "tailwindcss" source("../");
+
+body {
+  margin: 0;
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-lato {
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections don't get hidden behind the fixed nav */
+section[id] {
+  scroll-margin-top: 72px;
+}
