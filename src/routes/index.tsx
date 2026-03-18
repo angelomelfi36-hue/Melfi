@@ -106,6 +106,9 @@ function Navbar() {
 /* ─────────────────────────────────────────────
    Hero / Home section
 ───────────────────────────────────────────── */
+/* ─────────────────────────────────────────────
+   Hero / Home section
+───────────────────────────────────────────── */
 function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -115,17 +118,17 @@ function HeroSection() {
       <img src="/hero-bg.webp" alt="Interno Panificio Melfi" className="absolute inset-0 w-full h-full object-cover" />
 
       {/* Overlay scuro per leggibilità */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-6 flex justify-center">
-          <div className="w-24 h-24 rounded-full border-4 border-amber-300 flex items-center justify-center bg-amber-900/70 p-4">
-            {/* TUO LOGO PRINCIPALE, già puntato a 'public/logo-forno.png' */}
-            <img src="/logo-forno.png" alt="Logo Panificio Melfi" className="w-full h-full object-contain" />
+        <div className="mb-8 flex justify-center">
+          {/* IL TUO LOGO BIANCO, posizionato centralmente, ridimensionato e cerchiato */}
+          <div className="w-20 h-20 rounded-full border-4 border-amber-300 flex items-center justify-center bg-amber-900/60 p-3 shadow-xl">
+             <img src="/logo-forno.png" alt="Logo Panificio Melfi" className="w-full h-full object-contain" />
           </div>
         </div>
 
-        <p className="text-amber-300 text-sm font-lato tracking-[0.3em] uppercase mb-4">
+        <p className="text-amber-300 text-sm font-lato tracking-[0.3em] uppercase mb-6">
           Dal 1952 · Tradizione Artigianale
         </p>
         <h1 className="font-playfair text-5xl md:text-7xl text-white font-bold leading-tight mb-6">
@@ -133,7 +136,7 @@ function HeroSection() {
           <br />
           <span className="text-amber-300">Melfi</span>
         </h1>
-        <p className="text-amber-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 font-lato font-light">
+        <p className="text-amber-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-lato font-light">
           Pane fragrante, dolci genuini e pasticceria tradizionale italiana.<br>          Ogni giorno inforniamo con passione, rispettando le ricette di famiglia<br>          tramandate di generazione in generazione.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
