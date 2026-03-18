@@ -35,7 +35,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo / brand name */}
         <a href="#home" className="font-playfair text-white text-2xl font-bold tracking-wide">
-          Forno Bianchi
+          Panificio Melfi
         </a>
 
         {/* Desktop navigation — right side */}
