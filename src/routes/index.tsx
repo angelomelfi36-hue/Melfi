@@ -31,12 +31,6 @@ function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo / brand name */}
-        <a href="#home" className="flex items-center gap-3">
-          <img src="/logo-forno.png" alt="Logo Panificio Melfi" className="w-10 h-10 object-contain" />
-          <span className="font-playfair text-white text-2xl font-bold tracking-wide">Panificio Melfi</span>
-        </a>
-
         {/* Desktop navigation — right side */}
         <div className="hidden md:flex items-center gap-1 relative">
           <button
