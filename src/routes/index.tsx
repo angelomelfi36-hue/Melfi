@@ -96,10 +96,10 @@ function HeroSection() {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <img src="/logo-forno.png" alt="Logo Forno Melfi" className="mx-auto mb-6 w-32 h-32 object-contain" />
         <p className="text-amber-300 text-sm font-lato tracking-[0.3em] uppercase mb-4">
-          Dal 1952 · Tradizione Artigianale
+          Dal 2015 · Tradizione Artigianale
         </p>
         <h1 className="font-playfair text-5xl md:text-7xl text-white font-bold leading-tight mb-6">
-          Forno Artigianale<br /><br /><span className="text-amber-300">Melfi</span>
+          Panificio <br /><br /><span className="text-amber-300">Melfi</span>
         </h1>
         <p className="text-amber-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 font-lato font-light">
           Pane fragrante, dolci genuini e pasticceria tradizionale italiana.
