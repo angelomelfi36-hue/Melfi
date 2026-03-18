@@ -5,9 +5,6 @@ export const Route = createFileRoute('/')({
   component: BakeryHome,
 })
 
-/* ─────────────────────────────────────────────
-   Navigation
-───────────────────────────────────────────── */
 function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -63,9 +60,6 @@ function Navbar() {
   )
 }
 
-/* ─────────────────────────────────────────────
-   Hero Section
-───────────────────────────────────────────── */
 function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -81,17 +75,14 @@ function HeroSection() {
         <h1 className="font-playfair text-5xl md:text-7xl text-white font-bold leading-tight mb-6">Forno Artigianale<br /><span className="text-amber-300">Melfi</span></h1>
         <p className="text-amber-100 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">Pane fragrante, dolci genuini e pasticceria tradizionale ogni giorno.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#prodotti" className="bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-4 rounded-full text-lg transition-transform hover:scale-105">I Nostri Prodotti</a>
-          <a href="#contatti" className="border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-amber-950 font-bold px-8 py-4 rounded-full text-lg transition-transform hover:scale-105">Vieni a Trovarci</a>
+          <a href="#prodotti" className="bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-4 rounded-full text-lg">I Nostri Prodotti</a>
+          <a href="#contatti" className="border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-amber-950 font-bold px-8 py-4 rounded-full text-lg">Vieni a Trovarci</a>
         </div>
       </div>
     </section>
   )
 }
 
-/* ─────────────────────────────────────────────
-   Products
-───────────────────────────────────────────── */
 function ProductsSection() {
   const products = [
     { id: 1, name: 'Pane di Casa', desc: 'Crosta croccante e lievito madre.', image: '/prod-pane.webp' },
@@ -118,20 +109,17 @@ function ProductsSection() {
   )
 }
 
-/* ─────────────────────────────────────────────
-   History
-───────────────────────────────────────────── */
 function HistorySection() {
   return (
     <section id="storia" className="py-24 bg-amber-950 text-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="font-playfair text-4xl font-bold mb-8">La Nostra Storia</h2>
-        <p className="max-w-2xl mx-auto text-amber-100 font-light leading-relaxed mb-12">Dal 1952, tre generazioni di passione per il pane artigianale nel cuore del borgo antico.</p>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <p className="max-w-2xl mx-auto text-amber-100 font-light leading-relaxed mb-12">Dal 1952, tre generazioni di passione per il pane artigianale.</p>
+        <div className="grid md:grid-cols-2 gap-8 items-center text-left">
           <img src="/history-forno.webp" className="rounded-3xl border-4 border-amber-800" />
-          <div className="text-left bg-amber-900/50 p-8 rounded-3xl border border-amber-800">
+          <div className="bg-amber-900/50 p-8 rounded-3xl border border-amber-800">
             <h3 className="text-amber-400 font-bold text-2xl mb-4">Un'eredità di sapore</h3>
-            <p className="text-amber-100 font-light italic">"Ogni mattina ancora prima dell'alba impastiamo con cura gli ingredienti semplici che i nostri nonni ci hanno insegnato a rispettare."</p>
+            <p className="text-amber-100 font-light italic">"Impastiamo ogni giorno con la stessa passione insegnataci dai nostri nonni."</p>
           </div>
         </div>
       </div>
@@ -139,4 +127,16 @@ function HistorySection() {
   )
 }
 
-/*
+function BakeryHome() {
+  return (
+    <main className="min-h-screen bg-stone-50">
+      <Navbar />
+      <HeroSection />
+      <ProductsSection />
+      <HistorySection />
+      <footer id="contatti" className="py-12 bg-amber-950 text-amber-200 text-center">
+        <p>© 2024 Panificio Melfi - Tradizione e Passione</p>
+      </footer>
+    </main>
+  )
+}
