@@ -1,0 +1,10 @@
+path: C:\Users\user\OneDrive\Desktop\Tesi\NordTank586x371\dataset
+
+# Percorsi relativi (YOLO cercherà i .txt in \labels\train e \labels\val in automatico)
+train: images/train_images
+val: images/val_images
+
+#numero classi
+nc: 2
+# la prim classe è sfondo perchè i file .txt mi partono da 1 invece che zero
+names: ['null', 'damage']
